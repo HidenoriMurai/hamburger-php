@@ -10,19 +10,18 @@
         <?php wp_head(); ?>
     </head>
 
-    <body class="l-body">
+    <body <?php body_class(); ?> class="l-body">
 
         <section class="l-column">
             <section class="l-column__contents">
                 <header class="l-header">
                     <button class="c-button-box"><p class="c-button--menu js-button--menu">Menu</p></button>
                     <div class="p-header__layout">
-                        <h1 class="p-header"><a class="p-header__logo">Hamburger</a></h1>
-                        <form class="p-header__form" action="#" method="post">
-                            <input class="p-header__search js-header__search" type="search">
-                            <input class="p-header__submit" type="submit" value="検索">
-                            <div class="p-header__search-icon1"><span class="p-header__search-icon2"></span></div>
-                        </form>
+                        <h1 class="p-header">
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?><span class="p-header__logo"></span></a>
+                        </h1>
+                        <!----検索フォーム----->
+                        <?php get_search_form(); ?>
                     </div>
                 </header>
                 
