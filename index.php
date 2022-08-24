@@ -8,9 +8,7 @@
         <title>Hamburger</title>
     </head>
 
-    
     <body class="l-body">
-
 
         <section class="l-column">
             <section class="l-column__contents">
