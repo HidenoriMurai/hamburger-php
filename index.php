@@ -1,6 +1,6 @@
                 
                 <!-- header-->
-                
+                <?php get_header ();?>
                 
                 <main class="l-contents">
                         <div class="p-front__top">
@@ -56,5 +56,6 @@
             </section>
 
                 <!---sidebar---->
-
+                <?php get_sidebar ();?>
                 <!---footer---->
+                <?php get_footer ();?>
