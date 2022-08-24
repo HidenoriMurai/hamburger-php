@@ -1,0 +1,142 @@
+@use "../../foundation/breakpoint" as b;
+
+//メニュー
+.c-button-box{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        @include b.pc{
+                display: none;
+        }
+}
+
+
+        .c-button--menu{
+        margin: 14px 16px 0 0;
+        z-index: 10;
+        color: #707070;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+}  
+
+
+//バツボタン
+.c-btn__hamburger{
+        z-index: 1000;
+        width: 38px;
+        height: 38px;
+        position: relative;
+        cursor:pointer;
+        
+        @include b.pc{
+                display: none;
+        }
+        &-layout{
+                display: flex;
+                justify-content: flex-end;
+        }
+}
+.c-btn__hamburger-bar {
+        display: block;
+        width: 100%;
+        height: 6px;
+        position: absolute;
+        left: 0;
+        background:#707070;
+}
+
+.c-btn__hamburger-bar:nth-child(1) {
+        top: 50%;
+        transform: rotate(-45deg);
+}
+
+.c-btn__hamburger-bar:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+        transform: rotate(45deg);
+        
+}
+
+.c-btn__close{
+        display: flex;
+        justify-content:flex-end;
+        width: 40px;
+        height: 40px;
+        margin: 10px 20px 0 0;
+        
+}
+
+//アーカイブbtn(詳しく）
+
+.c-btn__archive{
+        font-size: 16px;
+        font-weight: bold;
+        display: inline-block;
+        background:#fff;
+        color: #707070; 
+        padding: 10px 41px; 
+        border-radius: 30px;
+        margin: 40px 0 44px 0;
+        position: relative;
+        @include b.pc{
+                width: 43%;
+                padding: 5% 0 5% 0; 
+
+                border-radius: 60px;
+        }
+
+        &-layout{
+                display: flex;
+                justify-content: center;
+        }
+}
+
+
+
+//アーカイブページ送りボタン
+.c-archive__pagination__btn{
+        font-size: 12px;
+        text-decoration: none;
+        border: 1px solid;
+        color: #3C2B1C;
+        border-color: #3C2B1C;
+        padding: 2px 8px 2px 8px;
+        margin: 0 7.5px 0 7.5px;
+        @include b.sp{
+                display: none;
+        }
+}
+
+.c-archive__pagination__no-li-1{
+        font-size: 12px;
+        text-decoration: none;
+        border: 1px solid;
+        color: #fff;
+        background-color: #3C2B1C;
+        border-color: #3C2B1C;
+        padding: 2px 8px 2px 8px;
+        margin: 0 7.5px 0 7.5px;
+        @include b.sp{
+                display: none;
+        }
+}
+
+//シングル&Pageページ下部ボタン
+.c-btn__foot{
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        background:#F2EDE9;
+        color: #3C2A10; 
+        border: 1px solid #3C2A10;
+        padding: 10px 41px; 
+        border-radius: 15px;
+        width: 100%;
+        height: 81px;
+        @include b.tab{
+                width: 430px;
+                height: 104px;
+                margin: 30px 0 30px 0;
+        }
+}

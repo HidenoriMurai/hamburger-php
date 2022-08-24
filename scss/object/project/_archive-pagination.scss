@@ -1,0 +1,58 @@
+@use "../../foundation/breakpoint" as b;
+
+.p-archive__pagination{
+    display: flex;
+    justify-content:space-between;
+    margin: 60px 19px 31px 19px;
+        @include b.tab{
+            justify-content: center;
+            align-items: center;
+
+        }
+        @include b.pc{
+            justify-content: center;
+            align-items: center;
+        }
+    
+    &-previous{
+        display: flex;
+
+        &-txt{
+            font-size: 16px;
+            font-weight: lighter;
+            @include b.tab{
+                display: none;
+            }
+        }
+
+        &-img{
+            position: relative;
+            top:3px;
+            margin-right: 8px;
+        }
+
+        &-no{
+            margin-right: 15px;
+            @include b.sp{
+                display: none;
+            }
+        }
+    }
+    &-next{
+        display:flex;
+
+        &-txt{
+            font-size: 16px;
+            font-weight: lighter;
+            @include b.tab{
+                display: none;
+            }
+        }
+
+        &-img{
+            position: relative;
+            top: 3px;
+            margin-left: 8px;
+        }
+    }
+}

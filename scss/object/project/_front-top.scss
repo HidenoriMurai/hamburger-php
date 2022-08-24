@@ -1,0 +1,35 @@
+@use "../../foundation/breakpoint" as b;
+
+.p-front__top{
+    display: flex;
+
+
+    &-images{
+        position: relative;
+        z-index: 20;
+        height: 285px;
+        width: 100%;
+        vertical-align: bottom;
+        object-fit:cover;
+        @include b.pc{
+            height: 530px;
+        }
+    }
+
+    &-sub-title{
+        position: absolute;
+        padding: 120px 0 0 25px;
+        margin: auto;
+        z-index: 30;
+        font-size: 36px;
+        color: white;
+        font-weight: bold;
+
+            @include b.pc{
+                display:flex;
+                align-items: center;
+                height: 100%;
+                padding: 0 0 140px 25px;
+            }
+    }
+}

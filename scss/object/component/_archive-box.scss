@@ -1,0 +1,71 @@
+@use "../../foundation/breakpoint" as b;
+
+.c-archive-box{
+    margin: 19px 19px 0 19px;
+        @include b.tab{
+            display: flex;
+            margin: 25px 0 0 5%;
+            width: 90%;
+        }
+
+    &__image{
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        @include b.tab{
+            width: 50%;
+        }
+    
+    }
+    &__inner{
+        position: relative;
+        background-color: #3C2B1C;
+            @include b.sp{
+                bottom: 7px;
+            }
+            @include b.tab{
+                width: 50%;
+            }
+    }
+    &__ttl{
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 32px 0 0 17px;
+        @include b.tab{
+            padding: 32px 0 0 9%;
+        }
+        @include b.pc{
+            font-size: 36px;
+            padding: 32px 0 0 9%;
+        }
+
+    }
+    &__sub-ttl{
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 24px 0 0 17px;
+        @include b.tab{
+            padding: 24px 0 0 9%;
+
+        }
+        @include b.pc{
+            font-size: 24px;
+            padding: 24px 0 0 9%;
+
+        }
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: lighter;
+        color: #fff;
+        padding: 10px 73px 0 17px;
+        @include b.tab{
+            padding: 10px 59px 0 9%;
+        }
+        @include b.pc{
+            padding: 10px 104px 0 9%;
+        }
+    }
+}

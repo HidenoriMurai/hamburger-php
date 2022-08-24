@@ -1,0 +1,13 @@
+@use "../foundation/breakpoint" as b;
+
+.l-header{
+    position: relative;
+    display: block;
+    bottom: 4px;
+    height: 217px;
+    width: 100vw;
+    background-color:#FFF7EF;
+        @include b.pc{
+            width: 100%;
+        }
+}

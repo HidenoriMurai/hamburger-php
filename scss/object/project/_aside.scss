@@ -1,0 +1,84 @@
+@use "../../foundation/breakpoint" as b;
+
+.p-aside{
+    width: 100vw;
+    z-index: 2000;
+    transition: all 0.8s;
+    left: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: scroll;
+        @include b.pc{
+            position: inherit;
+            width: 100%;
+            
+        }
+
+    &__menu-logo{
+        display: none;
+        @include b.pc{
+            display: flex;
+            font-size: 34px;
+            font-weight: bold;
+            color: #707070;
+            padding: 30px 0 0 44px;
+        }
+    }
+    
+
+    &__bg{   
+    width: 375px;
+    background-color: #F2EDE9;
+    margin: 0 0 0 auto;
+    @include b.pc{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    }
+
+    &__burger{
+        padding-top: 160px;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 0 0 46px;
+        color: #707070;
+            @include b.pc{
+                padding-top: 80px;
+            }
+    }
+
+    &__burger-menu{
+        margin: 40px 0 0 66px;
+    }
+
+    &__side{
+        font-size: 24px;
+        font-weight: bold;
+        color: #707070;
+        margin: 34px 0 0 46px;
+    }
+
+    &__side-menu{
+        margin: 40px 0 0 66px;
+    }
+
+    &__drink{
+        font-size: 24px;
+        font-weight: bold;
+        color: #707070;
+        margin: 38px 0 0 46px;
+    }
+
+    &__drink-menu{
+        margin: 40px 0 0 66px;
+        padding-bottom: 200px;
+    }
+}
+
+
+.p-aside-open{
+    left:0;
+    top: 0;
+}
