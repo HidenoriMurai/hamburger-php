@@ -1,16 +1,32 @@
-.c-aside{
-    font-size: 20px;
-    font-weight: lighter;
-    color: #707070;
-    margin-bottom: 20px;
-    margin: 40px 0 0 66px;
-    margin: 40px 0 0 66px;
-}
 
-.cat-item{
+
+//メニュー全体
+.c-aside{
+    padding: 160px 0 0 46px;
+}
+//カテゴリグループ
+.menu-item-object-category{
+    padding-top: 40px;
     list-style: none;
 }
-
-.cat-item>a{
+//カテゴリタイトル
+.menu-item-object-category>a{
+    font-size: 24px;
     text-decoration: none;
+}
+//サブメニュグループ
+.sub-menu{
+    list-style: none;
+    font-size: 20px;
+    padding: 40px 0 0 20px;
+}
+//サブメニュタイトルの要素
+.menu-item-object-post{
+    font-size: 20px;
+    padding-bottom: 23px;
+}
+//サブメニュタイトル文字
+.menu-item-object-post>a{
+    text-decoration:none ;
+    font-size: 20px;
 }
