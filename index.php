@@ -5,7 +5,7 @@
                 <main class="l-contents">
                         <div class="p-front__top">
                             <p class="p-front__top-sub-title">ダミーサイト</p>
-                            <img src="/images/top-images-tab.jpg" alt="top-images" class="p-front__top-images">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-images-tab.jpg" alt="top-images" class="p-front__top-images">
                         </div>
                     
                         <ul class="p-front__contents">
@@ -43,6 +43,7 @@
                                 </ul>
                             </li>
                         </ul>
+                        
 
                         <section class="p-front__map">
                             <div class="p-front__map-bg">
@@ -57,5 +58,6 @@
 
                 <!---sidebar---->
                 <?php get_sidebar ();?>
+                
                 <!---footer---->
                 <?php get_footer ();?>

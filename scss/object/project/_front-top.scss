@@ -26,10 +26,7 @@
         font-weight: bold;
 
             @include b.pc{
-                display:flex;
-                align-items: center;
-                height: 100%;
-                padding: 0 0 140px 25px;
+                padding: 250px 0 0 25px;
             }
     }
 }

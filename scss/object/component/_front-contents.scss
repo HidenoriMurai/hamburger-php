@@ -21,7 +21,7 @@
     
 
     &__take-out{
-        background-image: url("/images/take-out.jpg");
+        background-image: url("../images/take-out.jpg");
         margin: 20px 20px 20px 20px;
         min-height: 643px;
         height: auto;
@@ -46,8 +46,9 @@
         }
 
         &--box{
-            padding-top: 100px;
             margin-top: auto;
+            padding: 100px 0 0 0;
+
         }
 
         
@@ -77,7 +78,7 @@
 
 
     &__eat-in{
-        background-image: url("/images/eat-in.jpg");
+        background-image: url("../images/eat-in.jpg");
         margin: 0 20px 49px 20px;
         min-height: 643px;
         height: auto;
@@ -105,8 +106,9 @@
         }
 
         &--box{
-            padding-top: 100px;
             margin-top: auto;
+            padding: 100px 0 0 0;
+
         }
 
         &--box1{
