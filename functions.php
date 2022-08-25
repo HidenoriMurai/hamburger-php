@@ -27,12 +27,12 @@ add_filter('pre_get_document_title', 'hamburger_title');
     function hamburger_widgets_init() {
         register_sidebar (
             array(
-                'name'          => 'All Menu',
-                'id'            => 'menu_widget',
-                'description'   => 'メニューの一覧です',
-                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'name'          => 'カテゴリー',
+                'id'            => 'category_widget',
+                'description'   => 'カテゴリー用ウィジェットです',
+                'before_widget' => '<div id="%1$s" class="c-aside %2$s">',
                 'after_widget'  => '</div>',
-                'before_title'  => '<h2 class="c-category-title">',
+                'before_title'  => '<h2 class="c-aside">',
                 'after_title'   => "</h2>\n",
             )
         );

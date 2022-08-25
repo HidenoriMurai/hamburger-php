@@ -350,7 +350,16 @@ body {
   font-weight: lighter;
   color: #707070;
   margin-bottom: 20px;
+  margin: 40px 0 0 66px;
+  margin: 40px 0 0 66px;
+}
+
+.cat-item {
   list-style: none;
+}
+
+.cat-item > a {
+  text-decoration: none;
 }
 
 .c-text-box__ttl {
@@ -792,6 +801,7 @@ body {
   width: 375px;
   background-color: #F2EDE9;
   margin: 0 0 0 auto;
+  height: 100%;
 }
 @media (min-width: 1200px) {
   .p-aside__bg {
