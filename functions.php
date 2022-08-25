@@ -22,3 +22,19 @@ add_filter('pre_get_document_title', 'hamburger_title');
         wp_enqueue_script( 'script', get_template_directory_uri() . '/js/index.js', array('jquery'), true );
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
+
+    //ウィジェット機能
+    function hamburger_widgets_init() {
+        register_sidebar (
+            array(
+                'name'          => 'All Menu',
+                'id'            => 'menu_widget',
+                'description'   => 'メニューの一覧です',
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h2 class="c-category-title">',
+                'after_title'   => "</h2>\n",
+            )
+        );
+    }
+    add_action( 'widgets_init', 'hamburger_widgets_init' );
