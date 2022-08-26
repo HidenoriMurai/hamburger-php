@@ -34,35 +34,35 @@
                         <cite class="p-single__quote-name">出典元：　<a href="#">◯◯◯◯◯◯◯◯◯◯◯</a></cite>
                     </div>
                 </div>
-                <img  src="/images/single-img-bg.jpg" alt="single-img" class="p-single-s-img">
+                <img  src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-img-bg.jpg" alt="single-img" class="p-single-s-img">
 
 
                 <ul class="p-single__box">
                     <li class="p-single__box-1">
-                        <img src="/images/single-img-mid.jpg" alt="single-box-image" class="p-single__box--image1">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-img-mid.jpg" alt="single-box-image" class="p-single__box--image1">
                         <p class="p-single-box__text1">テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
                     </li>
 
                     <li class="p-single__box-2">
                         <p class="p-single__box--text2"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-                        <img src="/images/single-img-mid.jpg" alt="single-box-image" class="p-single__box--image2">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-img-mid.jpg" alt="single-box-image" class="p-single__box--image2">
                     </li>
                     <li class="p-single__box-bottom">
-                        <img src="/images/single-mid2.jpg" class="p-single__box-bottomーimg">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-mid2.jpg" class="p-single__box-bottomーimg">
                     </li>
                 </ul>
 
 
                 <article class="p-single__grid">
-                    <img src="/images/single-grid.jpg" alt="single-grid1" class="p-single__grid-img1 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="single-grid2" class="p-single__grid-img2 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="single-grid3" class="p-single__grid-img3 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="single-grid4" class="p-single__grid-img4 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="single-grid5" class="p-single__grid-img5 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="single-grid6" class="p-single__grid-img6 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="single-grid7" class="p-single__grid-img7 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="single-grid8" class="p-single__grid-img8 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="single-grid9" class="p-single__grid-img9 c-size__grid-img">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-grid.jpg" alt="single-grid1" class="p-single__grid-img1 c-size__grid-img">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-grid.jpg" alt="single-grid2" class="p-single__grid-img2 c-size__grid-img">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-grid.jpg" alt="single-grid3" class="p-single__grid-img3 c-size__grid-img">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-grid.jpg" alt="single-grid4" class="p-single__grid-img4 c-size__grid-img">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-grid.jpg" alt="single-grid5" class="p-single__grid-img5 c-size__grid-img">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-grid.jpg" alt="single-grid6" class="p-single__grid-img6 c-size__grid-img">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-grid.jpg" alt="single-grid7" class="p-single__grid-img7 c-size__grid-img">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/single-grid.jpg" alt="single-grid8" class="p-single__grid-img8 c-size__grid-img">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/single-grid.jpg" alt="single-grid8" class="p-single__grid-img9 c-size__grid-img">
                 </article>
 
 
