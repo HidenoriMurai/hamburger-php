@@ -1,8 +1,12 @@
-
+@use "../../foundation/breakpoint" as b;
 
 //メニュー全体
 .c-aside{
-    padding: 160px 0 0 46px;
+    padding: 120px 0 0 46px;
+    @include b.pc{
+        padding: 40px 0 0 46px;
+
+    }
 }
 //カテゴリグループ
 .menu-item-object-category{

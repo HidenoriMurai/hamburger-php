@@ -346,7 +346,12 @@ body {
 }
 
 .c-aside {
-  padding: 160px 0 0 46px;
+  padding: 120px 0 0 46px;
+}
+@media (min-width: 1200px) {
+  .c-aside {
+    padding: 40px 0 0 46px;
+  }
 }
 
 .menu-item-object-category {

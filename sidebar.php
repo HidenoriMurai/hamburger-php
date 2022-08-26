@@ -1,6 +1,6 @@
 
             <section class="l-column__aside">
-                <aside class="p-aside l-aside">
+                <aside class="p-aside">
                     <nav class="p-aside__bg">
                         <div class="c-btn__hamburger-layout">
                             <div class="c-btn__close js-btn__close">
