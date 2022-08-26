@@ -13,17 +13,18 @@
                         while(have_posts()):
                             the_post();
                             the_post_thumbnail('full');
-                            the_content();
                         endwhile;
                     endif;
                 ?>
 
             
             <section class="l-single__contents">
-                
+                <div class="p-single_content">
+                    <?php the_content(); ?>
+                </div>
 
-            <?php if ( is_single('43') ): ?>
-ここに記述した内容が、投稿IDが"43(チーズバーガー)"の固定ページのみに表示されます。
+            <?php if ( is_single(array(43,42))): ?>
+            <!----ここに記述した内容が、投稿IDが"43(チーズバーガー)"の固定ページのみに表示されます。--->
                 
                 <div class="p-single__text-box">
                     <h3 class="p-single__ttl3">見出しh3</h3>
@@ -31,15 +32,14 @@
                     <h5 class="p-single__ttl5 u-txt_size">見出しh5</h5>
                     <h6 class="p-single__ttl6 u-txt_size">見出しh6</h6>
                     
-
+                    
                     <div class="p-single__quote">
                         <blockquote class="p-single__quote-txt">Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ</blockquote>
                         <cite class="p-single__quote-name">出典元：　<a href="#">◯◯◯◯◯◯◯◯◯◯◯</a></cite>
                     </div>
                 </div>
-                <img  src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-img-bg.jpg" alt="single-img" class="p-single-s-img">
-
-
+                <?php echo esc_url(the_post_thumbnail()); ?>
+                
                 <ul class="p-single__box">
                     <li class="p-single__box-1">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-img-mid.jpg" alt="single-box-image" class="p-single__box--image1">
@@ -48,13 +48,13 @@
 
                     <li class="p-single__box-2">
                         <p class="p-single__box--text2"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-img-mid.jpg" alt="single-box-image" class="p-single__box--image2">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-img-mid.jpg"alt="single-box-image" class="p-single__box--image2">
                     </li>
                     <li class="p-single__box-bottom">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-mid2.jpg" class="p-single__box-bottomーimg">
                     </li>
                 </ul>
-
+                
 
                 <article class="p-single__grid">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>//images/single-grid.jpg" alt="single-grid1" class="p-single__grid-img1 c-size__grid-img">

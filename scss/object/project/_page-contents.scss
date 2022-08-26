@@ -1,4 +1,5 @@
 @use "../../foundation/breakpoint" as b;
+
 //見出しテキストボックス
 .p-page__text-box{
     color: #3C2A10;
@@ -52,7 +53,7 @@
     }
 
     &-txt{
-        padding: 30px 20px 76px 20px;
+        padding: 30px 20px 0 20px;
     }
 
     &-name{
@@ -70,6 +71,7 @@
         display: flex;
         margin-top: 30px;
         align-items: flex-start;
+        object-fit: cover;
         @include b.tab{
             margin-top: 60px;
         }

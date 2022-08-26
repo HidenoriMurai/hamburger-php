@@ -16,6 +16,8 @@
 //カテゴリタイトル
 .menu-item-object-category>a{
     font-size: 24px;
+    font-weight: bold;
+    color: #707070;
     text-decoration: none;
 }
 //サブメニュグループ
@@ -33,4 +35,5 @@
 .menu-item-object-post>a{
     text-decoration:none ;
     font-size: 20px;
+    color: #707070;
 }
