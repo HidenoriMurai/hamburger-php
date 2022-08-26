@@ -20,9 +20,12 @@
 
             
             <section class="l-single__contents">
+                
+
+            <?php if ( is_single('43') ): ?>
+ここに記述した内容が、投稿IDが"43(チーズバーガー)"の固定ページのみに表示されます。
+                
                 <div class="p-single__text-box">
-                    <h2 class="p-single__text-box__ttl">見出しh2</h2>
-                    <p class="p-single__text-box__text">タグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
                     <h3 class="p-single__ttl3">見出しh3</h3>
                     <h4 class="p-single__ttl4 u-txt_size">見出しh4</h4>
                     <h5 class="p-single__ttl5 u-txt_size">見出しh5</h5>
@@ -111,10 +114,15 @@
                     </tr>
                 </table>
 
+
+                <?php else: ?>
+                <?php endif; ?>
+
                 <button class="c-btn__foot">ボタン</button>
 
                 <p class="p-single__txt">boldboldboldboldboldboldbold</p>
-                
+
+
 
             </section>
 
