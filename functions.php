@@ -40,3 +40,10 @@ add_filter('pre_get_document_title', 'hamburger_title');
         );
     }
     add_action( 'widgets_init', 'hamburger_widgets_init' );
+
+    //カスタムメニュー
+    register_nav_menus( array(
+        'global' => 'グローバル',
+        'side'   => 'サイド',
+        'footer' => 'フッター'
+    ) );
