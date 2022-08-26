@@ -4,10 +4,20 @@
 
                 <div class="p-single__top">
                     <div class="p-single__top-bg">
-                        <h1 class="p-single__top-sub-title">h1</h1><p class="p-single__top-sub-title-1">チーズバーガー</p>
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/single-top.jpg" alt="top-images" class="p-single__top-images">
+                        <h1 class="p-single__top-sub-title"><?php the_title(); ?></h1>
                     </div>
                 </div>
+
+                <?php
+                    if(have_posts()):
+                        while(have_posts()):
+                            the_post();
+                            the_post_thumbnail('full');
+                            the_content();
+                        endwhile;
+                    endif;
+                ?>
+
             
             <section class="l-single__contents">
                 <div class="p-single__text-box">

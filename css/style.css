@@ -1018,19 +1018,17 @@ body {
   }
 }
 
+.wp-post-image {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
 .p-single__top {
   display: flex;
-}
-.p-single__top-bg {
-  background-color: #fff;
-  position: relative;
-  height: 225px;
-  width: 100%;
-}
-@media (min-width: 624px) {
-  .p-single__top-bg {
-    height: 500px;
-  }
 }
 .p-single__top-images {
   vertical-align: bottom;

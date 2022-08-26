@@ -4,12 +4,22 @@
 
                 <div class="p-page__top">
                     <div class="p-page__top-bg">
-                        <h1 class="p-page__top-sub-title">ショップについて</h1>
+                        <h1 class="p-page__top-sub-title"><?php the_title(); ?></h1>
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page-top.jpg" alt="top-images" class="p-page__top-images">
                     </div>
                 </div>
             
             <section class="l-page__contents">
+
+                <?php
+                    if(have_posts()):
+                        while(have_posts()):
+                            the_post();
+                            the_content();
+                        endwhile;
+                    endif;
+                ?>
+
                 <div class="p-page__text-box">
                     <h2 class="p-page__text-box__ttl">見出しh2</h2>
                     <p class="p-page__text-box__text">タグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>

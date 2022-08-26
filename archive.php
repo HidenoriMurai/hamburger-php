@@ -26,30 +26,6 @@
                     </div>
                 </div>
 
-                <div class="c-archive-box">
-                    <img src="/images/ archive-pc.png" alt="archive-box-image" class="c-archive-box__image">
-                    <div class="c-archive-box__inner">
-                        <p class="c-archive-box__ttl">ダブルチーズバーガー</p>
-                        <h3 class="c-archive-box__sub-ttl">小見出しが入ります</h3>
-                        <p class="c-archive-box__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <div class="c-btn__archive-layout">
-                            <button class="c-btn__archive">詳しく見る</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="c-archive-box">
-                    <img src="/images/ archive-pc.png" alt="archive-box-image" class="c-archive-box__image">
-                    <div class="c-archive-box__inner">
-                        <p class="c-archive-box__ttl">スペシャルチーズバーガー</p>
-                        <h3 class="c-archive-box__sub-ttl">小見出しが入ります</h3>
-                        <p class="c-archive-box__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <div class="c-btn__archive-layout">
-                            <button class="c-btn__archive">詳しく見る</button>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="p-archive__pagination">
                     <button class="p-archive__pagination-previous">
                         <p class="p-archive__pagination-previous-no">page 1/10</p>
