@@ -66,3 +66,23 @@ add_filter('pre_get_document_title', 'hamburger_title');
         'side'   => 'サイド',
         'footer' => 'フッター'
     ) );
+
+    //ページ内表示件数設定
+    function change_posts_per_page($query) {
+        if ( is_admin() || ! $query->is_main_query() )
+            return;
+    
+        /* アーカイブページの時に表示件数を10件にセット */
+        if ( $query->is_archive() ) {
+            $query->set( 'posts_per_page', '5' );
+        }
+        /* ポストアーカイブの時に表示件数を30件にセット */
+        if ( $query->is_post_type_archive() ) {
+            $query->set( 'posts_per_page', '5' );
+        }
+        /* 検索ページの時に表示件数を20件にセット */
+        if ( $query->is_search() ) {
+            $query->set( 'posts_per_page', '5' );
+        }
+    }
+    add_action( 'pre_get_posts', 'change_posts_per_page' );

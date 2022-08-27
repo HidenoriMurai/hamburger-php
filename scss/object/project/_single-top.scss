@@ -1,12 +1,15 @@
 @use "../../foundation/breakpoint" as b;
 
-
+//アーカイブ画像詳細
 .wp-post-image{
     width: 100%;
-    height: 500px;
+    height: 100%;
     object-fit: cover;
     position: relative;
     z-index: 1;
+    @include b.pc{
+        height: 471px;
+    }
 }
 
 .p-single__top{
