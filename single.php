@@ -12,7 +12,7 @@
                     if(have_posts()):
                         while(have_posts()):
                             the_post();
-                            the_post_thumbnail('full');
+                            the_post_thumbnail('full'); //アイキャッチ
                         endwhile;
                     endif;
                 ?>
@@ -20,7 +20,7 @@
             
             <section class="l-single__contents">
                 <div class="p-single_content">
-                    <?php the_content(); ?>
+                    <?php the_content(); ?>         <!--管理画面からの投稿内容--> 
                 </div>
 
             <?php if ( is_single(array(43,42))): ?>
