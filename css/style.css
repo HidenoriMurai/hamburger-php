@@ -884,6 +884,11 @@ body {
   }
 }
 
+.p-archive-search-snumber {
+  font-size: 36px;
+  padding: 40px 0 20px 60px;
+}
+
 .p-archive__top {
   display: flex;
 }
