@@ -8,6 +8,7 @@
     </head>
 
     <body <?php body_class(); ?> class="l-body">
+    <?php wp_body_open(); ?>
 
         <section class="l-column">
             <section class="l-column__contents">

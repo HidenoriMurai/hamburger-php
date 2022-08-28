@@ -22,7 +22,7 @@
                 <div class="p-single_content">
                     <?php the_content(); ?>         <!--管理画面からの投稿内容--> 
                 </div>
-
+                <?php wp_link_pages(); ?>
             <?php if ( is_single(array(43,42))): ?>
             <!----ここに記述した内容が、投稿IDが"43(チーズバーガー)"の固定ページのみに表示されます。--->
                 
@@ -117,7 +117,7 @@
 
                 <?php else: ?>
                 <?php endif; ?>
-
+                
                 <button class="c-btn__foot">ボタン</button>
 
                 <p class="p-single__txt">boldboldboldboldboldboldbold</p>

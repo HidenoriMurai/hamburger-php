@@ -1,9 +1,9 @@
 
 <?php   
     add_theme_support( 'title-tag' );       //タイトルタグ取得
-    add_theme_support( 'menus' );           //メニュー機能
     add_theme_support('post-thumbnails');   //アイキャッチ
     add_theme_support( 'editor-styles' );
+    add_theme_support( "automatic-feed-links");
     
     //ブロックエディタースタイル読み込ませ
     function org_theme_add_editor_styles() {
@@ -47,7 +47,6 @@ function max_show_page_number() {
     function hamburger_script() {
         wp_enqueue_style( 'ress','https://unpkg.com/ress/dist/ress.min.css' , array());
         wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css', array('ress'), false, 'all');
-        wp_enqueue_script('jquery','https://code.jquery.com/jquery-3.6.0.min.js', array(), true);
         wp_enqueue_script( 'script', get_template_directory_uri() . '/js/index.js', array('jquery'), true );
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );

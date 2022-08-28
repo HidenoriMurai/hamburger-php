@@ -19,7 +19,7 @@
                         endwhile;
                     endif;
                 ?>
-
+                <?php wp_link_pages(); ?>
                 <?php if ( is_page(array(79))): ?>
 
                 <div class="p-page__text-box">
