@@ -29,7 +29,9 @@
                         <h3 class="c-archive-box__sub-ttl">小見出しが入ります</h3>
                         <p class="c-archive-box__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         <div class="c-btn__archive-layout">
-                            <button class="c-btn__archive">詳しく見る</button>
+                            <button class="c-btn__archive">
+                                <a href="<?php the_permalink($id); ?>">詳しく見る</a>
+                            </button>
                         </div>
                     </div>
                 </div>
