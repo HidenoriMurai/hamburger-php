@@ -24,6 +24,20 @@ function hamburger_title( $title ) {
 }
 add_filter('pre_get_document_title', 'hamburger_title');
 
+//現在のページ数の取得
+function show_page_number() {
+    global $wp_query;
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    $max_page = $wp_query->max_num_pages;
+    echo $paged;
+}
+//総ページ数の取得
+function max_show_page_number() {
+    global $wp_query;
+    $max_page = $wp_query->max_num_pages;
+    echo $max_page;
+}
+
 
 
 

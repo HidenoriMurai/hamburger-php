@@ -1,58 +1,44 @@
 @use "../../foundation/breakpoint" as b;
 
+//ページネーションCSS
+.navigation{
+    padding-bottom: 5px;
+}
+
+.page-numbers{
+    font-size: 16px;
+    color:#333;
+    border:1px solid #707070;
+    padding: 12px;
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+}
+.next{
+    font-size: 16px;
+    color:#333;
+    border: none;
+    padding: 12px;
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+}
+.prev{
+    font-size: 16px;
+    color:#333;
+    border: none;
+    padding: 12px;
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+}
+
+
 .p-archive__pagination{
     display: flex;
-    justify-content:space-between;
-    margin: 60px 19px 31px 19px;
-        @include b.tab{
-            justify-content: center;
-            align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 60px 0 30px 0;
 
-        }
-        @include b.pc{
-            justify-content: center;
-            align-items: center;
-        }
-    
-    &-previous{
-        display: flex;
+}
 
-        &-txt{
-            font-size: 16px;
-            font-weight: lighter;
-            @include b.tab{
-                display: none;
-            }
-        }
-
-        &-img{
-            position: relative;
-            top:3px;
-            margin-right: 8px;
-        }
-
-        &-no{
-            margin-right: 15px;
-            @include b.sp{
-                display: none;
-            }
-        }
-    }
-    &-next{
-        display:flex;
-
-        &-txt{
-            font-size: 16px;
-            font-weight: lighter;
-            @include b.tab{
-                display: none;
-            }
-        }
-
-        &-img{
-            position: relative;
-            top: 3px;
-            margin-left: 8px;
-        }
-    }
+.p-archive__pagination>h2{
+    padding-right: 20px;
 }

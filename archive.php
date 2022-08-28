@@ -41,35 +41,28 @@
                     endif;
                 ?>
 
+            <div class="p-archive__pagination">
+            <!--ページネーション-->
+            <!--現在ページ-->
+            <h2>
+                page<?php show_page_number(''); ?>/<?php max_show_page_number(''); ?>
+            </h2>
+
+            <!--ページ送り-->
+                <?php
+                $args = array(
+                    'mid_size' => 1,
+                    'prev_text' => '&lt;&lt;',
+                    'next_text' => '&gt;&gt;',
+                    'screen_reader_text' => ' ',
+                );
+                the_posts_pagination($args);
+                ?>
 
 
+            </div>
 
 
-
-
-                <div class="p-archive__pagination">
-                    <button class="p-archive__pagination-previous">
-                        <p class="p-archive__pagination-previous-no">page 1/10</p>
-                        <img src="/images/previous-icon.jpg" alt="pagination-previous" class="p-archive__pagination-previous-img">
-                        <p>前へ</p>
-                    </button>
-
-                    <a href="#" class="c-archive__pagination__no-li-1" >1</a>
-                    <a href="#" class="c-archive__pagination__btn" >2</a>
-                    <a href="#" class="c-archive__pagination__btn" >3</a>
-                    <a href="#" class="c-archive__pagination__btn" >4</a>
-                    <a href="#" class="c-archive__pagination__btn" >5</a>
-                    <a href="#" class="c-archive__pagination__btn" >6</a>
-                    <a href="#" class="c-archive__pagination__btn" >7</a>
-                    <a href="#" class="c-archive__pagination__btn" >8</a>
-                    <a href="#" class="c-archive__pagination__btn" >9</a>
-                    
-                    
-                    <button class="p-archive__pagination-next">
-                        <p>次へ</p>
-                        <img src="/images/next-icon.jpg" alt="pagination-next" class="p-archive__pagination-next-img">
-                    </button>
-                </div>
             </section>
 
                 <!---sidebar---->
