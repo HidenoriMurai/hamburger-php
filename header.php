@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="<?php language_attributes(); ?>">
+<div <?php post_class('p-header__backgroundImage'); ?>>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">

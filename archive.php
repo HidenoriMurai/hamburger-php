@@ -1,6 +1,6 @@
                 <!-- header-->
                 <?php get_header ();?>
-
+                
 
                 <div class="p-archive__top">
                     <div class="p-archive__top-bg">
