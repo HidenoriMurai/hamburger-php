@@ -20,6 +20,8 @@
                     endif;
                 ?>
 
+                <?php if ( is_page(array(79))): ?>
+
                 <div class="p-page__text-box">
                     <h2 class="p-page__text-box__ttl">見出しh2</h2>
                     <p class="p-page__text-box__text">タグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
@@ -28,43 +30,6 @@
                     <h5 class="p-page__ttl5 u-txt_size">見出しh5</h5>
                     <h6 class="p-page__ttl6 u-txt_size">見出しh6</h6>
                     
-
-                    <div class="p-page__quote">
-                        <blockquote class="p-page__quote-txt">Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ</blockquote>
-                        <cite class="p-page__quote-name">出典元：　<a href="#">◯◯◯◯◯◯◯◯◯◯◯</a></cite>
-                    </div>
-                </div>
-                <img  src="/images/single-img-bg.jpg" alt="page-img" class="p-page-s-img">
-
-
-                <ul class="p-page__box">
-                    <li class="p-page__box-1">
-                        <img src="/images/single-img-mid.jpg" alt="page-box-image" class="p-page__box--image1">
-                        <p class="p-page-box__text1">テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-                    </li>
-
-                    <li class="p-page__box-2">
-                        <p class="p-page__box--text2"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-                        <img src="/images/single-img-mid.jpg" alt="page-box-image" class="p-page__box--image2">
-                    </li>
-                    <li class="p-page__box-bottom">
-                        <img src="/images/single-mid2.jpg" class="p-page__box-bottomーimg">
-                    </li>
-                </ul>
-
-
-                <article class="p-page__grid">
-                    <img src="/images/single-grid.jpg" alt="page-grid1" class="p-page__grid-img1 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="page-grid2" class="p-page__grid-img2 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="page-grid3" class="p-page__grid-img3 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="page-grid4" class="p-page__grid-img4 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="page-grid5" class="p-page__grid-img5 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="page-grid6" class="p-page__grid-img6 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="page-grid7" class="p-page__grid-img7 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="page-grid8" class="p-page__grid-img8 c-size__grid-img">
-                    <img src="/images/single-grid.jpg" alt="page-grid9" class="p-page__grid-img9 c-size__grid-img">
-                </article>
-
 
                 <section class="p-page__list">
                     <ul class="p-page__list--1">
@@ -110,6 +75,10 @@
                         <td class="p-page__table-td2">テーブル</td>
                     </tr>
                 </table>
+
+                <?php else: ?>
+                <?php endif; ?>
+
 
                 <button class="c-btn__foot">ボタン</button>
 

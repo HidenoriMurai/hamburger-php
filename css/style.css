@@ -1401,6 +1401,19 @@ body {
   }
 }
 
+.l-page__contents > p {
+  padding-top: 30px;
+}
+.l-page__contents > h2 {
+  padding-top: 30px;
+}
+.l-page__contents > h3 {
+  padding-top: 30px;
+}
+.l-page__contents > h4 {
+  padding-top: 30px;
+}
+
 .p-page__text-box {
   color: #3C2A10;
   margin-left: 0px;

@@ -1,5 +1,23 @@
 @use "../../foundation/breakpoint" as b;
 
+//エディター投稿CSS
+.l-page__contents{
+    &>p{
+        padding-top: 30px;
+    }
+    &>h2{
+        padding-top: 30px;
+    }
+    &>h3{
+        padding-top: 30px;
+    }
+    &>h4{
+        padding-top: 30px;
+    }
+
+}
+
+
 //見出しテキストボックス
 .p-page__text-box{
     color: #3C2A10;
