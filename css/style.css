@@ -391,6 +391,10 @@ body {
   color: #707070;
 }
 
+.menu-item-123 {
+  padding-bottom: 530px;
+}
+
 .c-text-box__ttl {
   font-size: 28px;
   font-weight: bold;
@@ -837,7 +841,6 @@ body {
   width: 375px;
   background-color: #F2EDE9;
   margin: 0 0 0 auto;
-  height: 100%;
 }
 @media (min-width: 1200px) {
   .p-aside__bg {
