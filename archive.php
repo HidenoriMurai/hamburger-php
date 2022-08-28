@@ -42,13 +42,13 @@
                 ?>
 
             <div class="p-archive__pagination">
-            <!--ページネーション-->
-            <!--現在ページ-->
-            <h2>
-                page<?php show_page_number(''); ?>/<?php max_show_page_number(''); ?>
-            </h2>
+                <!--ページネーション-->
+                <!--現在ページ-->
+                <h2>
+                    page<?php show_page_number(''); ?>/<?php max_show_page_number(''); ?>
+                </h2>
 
-            <!--ページ送り-->
+                <!--ページ送り-->
                 <?php
                 $args = array(
                     'mid_size' => 1,
@@ -58,8 +58,6 @@
                 );
                 the_posts_pagination($args);
                 ?>
-
-
             </div>
 
 
