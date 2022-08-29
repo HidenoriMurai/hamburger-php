@@ -515,6 +515,46 @@ body {
   width: 100%;
 }
 
+.is-style-plain {
+  padding: 30px 30px 30px 30px;
+}
+
+.editor-list {
+  padding: 30px 0 0 50px;
+  list-style: none;
+}
+
+.editor-list1 {
+  padding: 30px 0 0 80px;
+  list-style: none;
+}
+
+.editor-code {
+  padding: 30px 0 30px 0;
+}
+
+.is-style-outline > :where(.wp-block-button__link) {
+  border: 1px solid #000;
+  height: 104px;
+  width: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wp-block-table {
+  padding-top: 50px;
+}
+
+tbody tr {
+  border: 1px #999 solid;
+}
+
+tbody td {
+  border: 1px #999 solid;
+  padding: 30px 0 30px 30px;
+}
+
 .p-header > a {
   text-decoration: none;
   position: relative;

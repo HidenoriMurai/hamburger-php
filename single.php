@@ -28,7 +28,7 @@
                 <!-- ページ分割 -->
                 <?php wp_link_pages(); ?>
 <!----ここに記述した内容が、スラッグ(チーズバーガーとハンバーガー)"の固定ページのみに表示されます。--->
-            <?php if ( is_single(array('cheese','burger'))): ?>
+            <?php if ( is_single(array('cheese'))): ?>
             
                 
                 <div class="p-single__text-box">
@@ -122,10 +122,7 @@
 
                 <?php else: ?>
                 <?php endif; ?>
-                
-                <button class="c-btn__foot">ボタン</button>
 
-                <p class="p-single__txt">boldboldboldboldboldboldbold</p>
 
 
 
