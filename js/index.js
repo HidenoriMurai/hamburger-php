@@ -3,13 +3,13 @@
 //スライドメニュー
 jQuery(document).on('click','.js-button--menu', function () {//ボタンがクリックされたら
     jQuery(".p-aside").toggleClass('p-aside-open');//クラスを付与
-    jQuery(".home").toggleClass('l-body_scroll');//クラスを付与
+    jQuery("body").toggleClass('l-body_scroll');//クラスを付与
 });
 
 
 jQuery(document).on('click','.js-btn__hamburger',function () {//クリックされたら
     jQuery(".p-aside").removeClass('p-aside-open');//クラスも除去
-    jQuery(".home").removeClass('l-body_scroll');//クラスも除去
+    jQuery("body").removeClass('l-body_scroll');//クラスも除去
 });
 
 
@@ -38,7 +38,7 @@ jQuery(window).resize(function() {
     });
 //リサイズ時overfrow:hidenn解除
 jQuery(window).resize(function() {
-    jQuery(".l-body").removeClass('l-body_scroll');//クラスも除去
+    jQuery("body").removeClass('l-body_scroll');//クラスも除去
         });
 
 
