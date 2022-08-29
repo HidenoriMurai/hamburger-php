@@ -9,15 +9,16 @@
                 </div>
 
 
-                <p class="p-archive-search-snumber">『<?php the_title(); ?>』の検索結果:<?php echo $wp_query->found_posts; ?>件</p>
+                <!-- 条件分岐構文 -->
 
                 <?php
                     if ( have_posts()) : 
                     while ( have_posts()) :
-                        the_post();
+                        the_post();    
                 ?>
-
-
+            
+                <!-- データがある場合の処理 -->
+                <p class="p-archive-search-snumber">『<?php the_title(); ?>』の検索結果:<?php echo $wp_query->found_posts; ?>件</p>
                 <div class="c-archive-box">
                     <div class="c-archive-box__image" ><?php the_post_thumbnail(); ?></div>
                     <div class="c-archive-box__inner">
@@ -32,10 +33,11 @@
                     </div>
                 </div>
 
-                <?php
-                    endwhile;
-                    endif;
-                ?>
+                <!-- データがない場合の処理 -->
+                <?php endwhile; else: ?>
+                    <p class="p-archive-search-snumber">検索結果:0件  検索候補がありません。</p>
+                <!-- 終わりの記述 -->
+                <?php endif; ?>
 
 
             <div class="p-archive__pagination">
