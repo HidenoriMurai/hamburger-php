@@ -555,6 +555,18 @@ tbody td {
   padding: 30px 0 30px 30px;
 }
 
+@media (max-width: 623px) {
+  .editor-grid {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 623px) {
+  .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+    width: 100%;
+  }
+}
+
 .p-header > a {
   text-decoration: none;
   position: relative;

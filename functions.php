@@ -4,7 +4,7 @@
     add_theme_support('post-thumbnails');   //アイキャッチ
     add_theme_support( 'editor-styles' );
     add_theme_support( "automatic-feed-links");
-    
+
     //ブロックエディタースタイル読み込ませ
     function org_theme_add_editor_styles() {
         $editor_style_url = get_theme_file_uri( 'editor-style.css' );

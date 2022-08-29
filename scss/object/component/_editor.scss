@@ -1,3 +1,5 @@
+@use "../../foundation/breakpoint" as b;
+
 
 //引用
 .is-style-plain{
@@ -19,7 +21,6 @@
     padding: 30px 0 30px 0;
 }
 
-//テーブル
 
 //ボタン
 .is-style-outline>:where(.wp-block-button__link){
@@ -41,4 +42,17 @@ tbody tr{
 tbody td{
     border:1px #999 solid; 
     padding: 30px 0 30px 30px;
+}
+
+//グリッド
+.editor-grid{
+    @include b.sp{
+        flex-direction: column;
+    }
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+    @include b.sp{
+        width: 100%;
+    }
 }
