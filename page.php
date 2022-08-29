@@ -11,14 +11,16 @@
             
             <section class="l-page__contents">
 
-                <?php
-                    if(have_posts()):
-                        while(have_posts()):
-                            the_post();
-                            the_content();
-                        endwhile;
+                <?php if ( have_posts()) : ?>
+                <?php while ( have_posts()) : the_post();?>
+                <?php $slug = $post->post_name; ?><!-- スラッグを $slug に代入 -->
+
+                <?php the_post();
+                        the_content();
+                    endwhile;
                     endif;
                 ?>
+
                 <?php wp_link_pages(); ?>
                 <?php if ( is_page(array(79))): ?>
 

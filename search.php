@@ -30,7 +30,7 @@
                         <p class="c-archive-box__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         <div class="c-btn__archive-layout">
                             <button class="c-btn__archive">
-                                <a href="<?php the_permalink($id); ?>">詳しく見る</a>
+                                <a href="<?php the_permalink(); ?>">詳しく見る</a>
                             </button>
                         </div>
                     </div>

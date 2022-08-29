@@ -15,11 +15,9 @@
                 </biv>
 
 
-                <?php
-                    if ( have_posts()) : 
-                    while ( have_posts()) :
-                        the_post();
-                ?>
+                <?php if ( have_posts()) : ?>
+                <?php while ( have_posts()) : the_post();?>
+                <?php $slug = $post->post_name; ?><!-- スラッグを $slug に代入 -->
 
             
                 <div class="c-archive-box">
@@ -30,7 +28,7 @@
                         <p class="c-archive-box__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         <div class="c-btn__archive-layout">
                             <button class="c-btn__archive">
-                                <a href="<?php the_permalink($id); ?>">詳しく見る</a>
+                                <a href="<?php the_permalink(); ?>">詳しく見る</a>
                             </button>
                         </div>
                     </div>

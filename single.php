@@ -8,23 +8,28 @@
                     </div>
                 </div>
 
+                <?php if ( have_posts()) : ?>
+                <?php while ( have_posts()) : the_post();?>
+                <?php $slug = $post->post_name; ?><!-- スラッグを $slug に代入 -->
+                
                 <?php
-                    if(have_posts()):
-                        while(have_posts()):
-                            the_post();
-                            the_post_thumbnail('full'); //アイキャッチ
-                        endwhile;
+                    the_post_thumbnail('full'); //アイキャッチ
+                    endwhile;
                     endif;
                 ?>
+
+                
 
             
             <section class="l-single__contents">
                 <div class="p-single_content">
                     <?php the_content(); ?>         <!--管理画面からの投稿内容--> 
                 </div>
+                <!-- ページ分割 -->
                 <?php wp_link_pages(); ?>
-            <?php if ( is_single(array(43,42))): ?>
-            <!----ここに記述した内容が、投稿IDが"43(チーズバーガー)"の固定ページのみに表示されます。--->
+<!----ここに記述した内容が、スラッグ(チーズバーガーとハンバーガー)"の固定ページのみに表示されます。--->
+            <?php if ( is_single(array('cheese','burger'))): ?>
+            
                 
                 <div class="p-single__text-box">
                     <h3 class="p-single__ttl3">見出しh3</h3>

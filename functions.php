@@ -85,15 +85,15 @@ function max_show_page_number() {
         if ( is_admin() || ! $query->is_main_query() )
             return;
     
-        /* アーカイブページの時に表示件数を10件にセット */
+        /* アーカイブページの時に表示件数を5件にセット */
         if ( $query->is_archive() ) {
             $query->set( 'posts_per_page', '5' );
         }
-        /* ポストアーカイブの時に表示件数を30件にセット */
+        /* ポストアーカイブの時に表示件数を5件にセット */
         if ( $query->is_post_type_archive() ) {
             $query->set( 'posts_per_page', '5' );
         }
-        /* 検索ページの時に表示件数を20件にセット */
+        /* 検索ページの時に表示件数を5件にセット */
         if ( $query->is_search() ) {
             $query->set( 'posts_per_page', '5' );
         }
