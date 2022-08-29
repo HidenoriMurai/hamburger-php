@@ -68,3 +68,15 @@ tbody td{
         width: 30%;
     }
 }
+
+//メディアテキスト
+.media-txt1{
+    @include b.sp{
+        padding-top: 20px;
+    }
+}
+.media-txt2{
+    @include b.sp{
+        padding-top: 20px;
+    }
+}

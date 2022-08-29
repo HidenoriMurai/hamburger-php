@@ -577,6 +577,18 @@ tbody td {
   }
 }
 
+@media (max-width: 623px) {
+  .media-txt1 {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 623px) {
+  .media-txt2 {
+    padding-top: 20px;
+  }
+}
+
 .p-header > a {
   text-decoration: none;
   position: relative;
