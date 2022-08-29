@@ -769,6 +769,23 @@ body {
   }
 }
 
+.menu-footermenu-container > .menu {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.menu-footermenu-container > .menu > .menu-item > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.single-history {
+  padding-left: 10px;
+}
+
 .p-footer {
   width: 100%;
 }
@@ -780,7 +797,7 @@ body {
 .p-footer__txt-box {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 .p-footer__txt1 {
   font-size: 20px;
@@ -806,7 +823,7 @@ body {
   color: #fff;
   display: flex;
   justify-content: center;
-  margin-top: 34px;
+  margin-bottom: 10px;
 }
 
 .p-aside {
