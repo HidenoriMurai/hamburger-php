@@ -49,10 +49,22 @@ tbody td{
     @include b.sp{
         flex-direction: column;
     }
-}
+    @include b.tab{
 
+    }
+}
+//グリッド：スマホ１カラム
 .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
     @include b.sp{
         width: 100%;
+    }
+}
+//グリッド：タブレット２カラム
+.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) {
+    @include b.tab{
+        width: 40%;
+    }
+    @include b.pc{
+        width: 30%;
     }
 }

@@ -560,10 +560,20 @@ tbody td {
     flex-direction: column;
   }
 }
-
 @media (max-width: 623px) {
   .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
     width: 100%;
+  }
+}
+
+@media (min-width: 624px) {
+  .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) {
+    width: 30%;
   }
 }
 
